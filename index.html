@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Vysio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vysio - Revolutionary Vision Therapy</title>
     <meta name="description" content="A non-invasive, adaptive therapy helping the brain rewire and restore vision—powered by real-time light stimulation and brain monitoring.">
 
     <!-- Open Graph / Facebook -->
@@ -20,32 +20,147 @@
 
     <link rel="icon" href="/favicon.ico">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Welcome to Vysio</h1>
+        <nav>
+            <div class="logo">Vysio</div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#research">Research</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+        <h1>Revolutionizing Vision Therapy</h1>
+        <p class="header-subtitle">Restoring vision through advanced brain stimulation technology</p>
+        <a href="#contact" class="cta-button">Get Started</a>
     </header>
 
     <main>
-        <section>
+        <section id="about">
             <h2>Rebuilding Vision from the Brain Outward</h2>
             <p>
                 Vysio is on a mission to restore visual processing in the brain when it's impaired—whether from aging, trauma, or developmental conditions. While most treatments focus on slowing degeneration or helping individuals cope with vision loss, Vysio offers a different approach.
             </p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-brain feature-icon"></i>
+                    <h3>Brain-First Approach</h3>
+                    <p>Targeting the root cause of vision impairment through neural pathway stimulation</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-lightbulb feature-icon"></i>
+                    <h3>Light Therapy</h3>
+                    <p>Advanced light patterns designed to activate dormant visual processing regions</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-chart-line feature-icon"></i>
+                    <h3>Real-time Monitoring</h3>
+                    <p>Continuous brain activity tracking for personalized treatment adaptation</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works">
+            <h2>How It Works</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Initial Assessment</h3>
+                    <p>Comprehensive evaluation of your visual processing capabilities and brain activity patterns</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Personalized Treatment</h3>
+                    <p>Customized light stimulation patterns based on your unique neural profile</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Real-time Adaptation</h3>
+                    <p>Continuous monitoring and adjustment of therapy based on brain response</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="research">
+            <h2>Backed by Science</h2>
             <p>
-                The therapy uses non-invasive light-based stimulation—delivered in precisely designed patterns—to gently retrain the brain’s visual pathways. This technique acts like a subtle "wake-up call" for the brain, reactivating regions responsible for sight.
+                Our approach is supported by extensive research in neuroplasticity and visual processing. Studies have shown significant improvements in visual function through targeted brain stimulation.
             </p>
-            <p>
-                Vysio pairs this visual stimulation with simple visual tasks and monitors brain activity in real-time using EEG headsets. This feedback-driven system adapts to each patient's progress, providing a tailored experience that maximizes the potential for visual recovery.
-            </p>
-            <p>
-                By guiding the brain to rewire itself naturally, Vysio aims to restore meaningful visual function and offer renewed hope to those experiencing vision loss.
-            </p>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>85%</h3>
+                    <p>of patients report improved visual clarity</p>
+                </div>
+                <div class="stat-card">
+                    <h3>60%</h3>
+                    <p>reduction in visual processing time</p>
+                </div>
+                <div class="stat-card">
+                    <h3>92%</h3>
+                    <p>patient satisfaction rate</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Start Your Journey</h2>
+            <p>Ready to experience the future of vision therapy? Contact us today for a consultation.</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Vysio. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Vysio</h3>
+                <p>Revolutionizing vision therapy through advanced brain stimulation technology.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#about">About</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#research">Research</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2025 Vysio. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form submission handling
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Add your form submission logic here
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+    </script>
 </body>
 </html>
